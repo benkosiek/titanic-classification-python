@@ -21,30 +21,31 @@ discussion.
 Predict whether a passenger survived the Titanic disaster using tabular features (demographics, ticket class, fare, cabin/embarkation info).
 
 ## 🧭 CRISP-DM Phases
-1. **Business Understanding** – Predict survival; compare models and justify the best one.
-2. **Data Understanding** – Inspect missingness (e.g., `Age`, `Cabin`), distributions, and survival correlations.
-3. **Data Preparation** – Impute, encode categoricals (`Sex`, `Embarked`, `Pclass`), feature engineer (e.g., `Title`, `FamilySize`, `IsAlone`), scale where needed.
+1. **Business Understanding** – Predict survival; compare models and justify the best one.  
+2. **Data Understanding** – Inspect missingness (e.g., `Age`, `Cabin`), distributions, and survival correlations.  
+3. **Data Preparation** – Impute; encode categoricals (`Sex`, `Embarked`, `Pclass`); engineer features (e.g., `Title`, `FamilySize`, `IsAlone`); scale where needed.  
 4. **Modeling** – Train and tune multiple classifiers:
    - Logistic Regression, Linear Discriminant Analysis (LDA)
    - Support Vector Machine (SVM)
    - Random Forest, Gradient Boosting
    - k-Nearest Neighbors (KNN)
-5. **Evaluation** – Use stratified train/test or CV; metrics: Accuracy, F1, ROC-AUC, confusion matrices.
+5. **Evaluation** – Stratified train/test or CV; metrics: Accuracy, F1, ROC-AUC, confusion matrices.  
 6. **Deployment (lightweight)** – Produce `submission.csv` for Kaggle from the best model.
 
 ---
 
 ## 📁 Repository Structure
+```text
 notebooks/
-├── 01_DataPreparation.ipynb # Cleaning, imputing, encoding, feature engineering
-├── 02_DataExploration.ipynb # EDA and insights about survival
-├── 03_DataModeling.ipynb # Multiple classifiers + cross-validation
-└── 04_Submission.ipynb # Train best model on full train, predict test.csv
+├── 01_DataPreparation.ipynb   # Cleaning, imputing, encoding, feature engineering
+├── 02_DataExploration.ipynb   # EDA and insights about survival
+├── 03_DataModeling.ipynb      # Multiple classifiers + cross-validation
+└── 04_Submission.ipynb        # Train best model on full train, predict test.csv
 reports/
-└── summary_paper.pdf # Final write-up including CRISP-DM discussion and ethics
+└── summary_paper.pdf          # Final write-up including CRISP-DM discussion and ethics
 data/
-└── README.md # Instructions to download train.csv/test.csv from Kaggle
-requirements.txt # Python dependencies
+└── README.md                  # Instructions to download train.csv/test.csv from Kaggle
+requirements.txt               # Python dependencies
 
 
 ---
