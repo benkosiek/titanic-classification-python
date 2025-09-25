@@ -35,7 +35,7 @@ Predict whether a passenger survived the Titanic disaster using tabular features
 ---
 
 ## 📁 Repository Structure
-```text
+
 notebooks/
 ├── 01_DataPreparation.ipynb   # Cleaning, imputing, encoding, feature engineering
 ├── 02_DataExploration.ipynb   # EDA and insights about survival
