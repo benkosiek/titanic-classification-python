@@ -42,14 +42,14 @@ notebooks/
 ├── 03_DataModeling.ipynb      # Multiple classifiers + cross-validation
 └── 04_Submission.ipynb        # Train best model on full train, predict test.csv
 reports/
-└── summary_paper.pdf          # Final write-up including CRISP-DM discussion and ethics
+└── summary_paper.pdf          # Final write-up including ethical implications 
 data/
-└── README.md                  # Instructions to download train.csv/test.csv from Kaggle
-requirements.txt               # Python dependencies
+└── README.md                  
 
-
+```
 
 ---
+
 
 ## 🛠️ Technologies Used
 
